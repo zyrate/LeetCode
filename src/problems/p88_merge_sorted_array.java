@@ -1,4 +1,9 @@
 package problems;
+
+import org.junit.Test;
+
+import common.Utils;
+
 /**
  * 不需要新建一个数组，用逆向双指针法即可
  */
@@ -17,12 +22,11 @@ public class p88_merge_sorted_array {
         while(ptr2 >= 0) res[k--] = nums2[ptr2--];
     }
 
-    public static void test(){
+    @Test
+    public void test(){
         int nums1[] = new int[]{1,4,5,0,0,0};
         int nums2[] = new int[]{1,2,3};
         new p88_merge_sorted_array().merge(nums1, 3, nums2, 3);
-        for (int num : nums1) {
-            System.out.println(num);
-        }
+        Utils.printArray(nums1);
     }
 }

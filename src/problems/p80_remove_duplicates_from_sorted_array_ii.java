@@ -1,4 +1,9 @@
 package problems;
+
+import org.junit.Test;
+
+import common.Utils;
+
 /**
  * 用我自己的空位思想的话，要注意cnt的取值及判断，这是“向后检查”的思想，效率不高，很绕
  */
@@ -41,11 +46,10 @@ public class p80_remove_duplicates_from_sorted_array_ii {
         return slow;
     }
 
-    public static void test(){
+    @Test
+    public void test(){
         int[] nums = {1,1,1,1,1,2,2,2,2,2,3};
         int len = new p80_remove_duplicates_from_sorted_array_ii().removeDuplicates2(nums);
-        for(int i=0;i<len;i++){
-            System.out.println(nums[i]);
-        }
+        Utils.printArray(nums);
     }
 }
