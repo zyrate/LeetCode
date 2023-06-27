@@ -49,7 +49,7 @@ public class p80_remove_duplicates_from_sorted_array_ii {
     @Test
     public void test(){
         int[] nums = {1,1,1,1,1,2,2,2,2,2,3};
-        int len = new p80_remove_duplicates_from_sorted_array_ii().removeDuplicates2(nums);
+        removeDuplicates2(nums);
         Utils.printArray(nums);
     }
 }
